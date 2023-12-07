@@ -1,7 +1,5 @@
 sudo apt update
 
-sudo apt install -y net-tools
+sudo apt install -y iproute2
 
-sudo ip link set enp0s8 down
-sudo ip route del default via 10.0.2.2
-sudo ip route add default via 10.0.1.10
+sudo ip route add default via 192.168.53.10
